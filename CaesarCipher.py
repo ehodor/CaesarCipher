@@ -11,7 +11,7 @@ while True:
         print('Sorry, input is invalid. Please type either "encode" or "decode".\n')
 
 message = input(f'What message would you like to {coding}?\n').lower()
-shift = int(input('By how much would you like to shift?\n'))
+shift = int(input('By how much would you like to shift?\n')) % 26
 
 
 def encrypt(message1, shift1):
